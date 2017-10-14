@@ -22,6 +22,10 @@ if($uploadFileType != "csv") {
    $errorMsg = "Sorry, We are only learning how to process a csv file right now :) .<br>";
 	$uploadOk = 0;
 }
+if($uploadFileType == "") {
+   $errorMsg = "Oops, it looks like you forgot to select a file. :) .<br>";
+	$uploadOk = 0;
+}
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
 	header('Location: https://web.njit.edu/~an485/Project1/index.php?page=homepage&msg=' . $errorMsg); 
