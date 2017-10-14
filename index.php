@@ -52,14 +52,6 @@ abstract class page {
         stringFunctions::printThis($this->html);
     }
 
-	//can I delete these?????  TEST This
-   /* public function get() {
-	
-    }
-
-    public function post() {
-}
-*/
 }
 
 ?>
