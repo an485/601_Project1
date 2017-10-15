@@ -11,7 +11,7 @@ class homepage extends page {
         $form .= '</form> ';
 		
 		
-		//$errorMsg = $_REQUEST['error'];
+		//See if we passed a message in the URL and sisplay it ;
 		if (!empty($_REQUEST['msg'])) {
 			
 			$formMsg = $_REQUEST['msg'];
